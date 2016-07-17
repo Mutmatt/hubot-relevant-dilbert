@@ -5,7 +5,7 @@
 #   none
 #
 # Commands:
-#   hubot relevant dilber <search query> - returns an image link
+#   hubot relevant dilbert <search query> - returns an image link
 #
 # Notes:
 #
