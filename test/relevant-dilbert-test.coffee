@@ -8,8 +8,9 @@ expect = chai.expect
 helper = new Helper('../src/relevant-dilbert.coffee')
 
 describe 'hubot-relevant-dilbert', ->
-  beforeEach ->
+  beforeEach (done) ->
     @room = helper.createRoom()
+    done()
 
   afterEach (done) ->
     @room.destroy()
@@ -22,11 +23,11 @@ describe 'hubot-relevant-dilbert', ->
         .yields(null, {statusCode: 200}, HtmlWithImages);
       done()
 
-    it 'sends an image', ->
+    it 'sends an image with image extension', ->
       @room.user.say('alice', '@hubot relevant dilbert robot power').then =>
         expect(@room.messages).to.eql [
           ['alice', '@hubot relevant dilbert robot power']
-          ['hubot', 'http://myfirstdilbertimage']
+          ['hubot', 'http://myfirstdilbertimage.png']
         ]
 
   context 'search has no results', ->

@@ -30,7 +30,7 @@ module.exports = (robot) ->
       if !error && body && response.statusCode == 200
         image = getImage(body)
         errorMsg = getHandledError(body) if !image
-      if image then res.send image else res.reply errorMsg
+      if image then res.send "#{image}.png" else res.reply errorMsg
 
   getImage = (body) ->
     html = cheerio.load body
