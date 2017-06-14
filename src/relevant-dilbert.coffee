@@ -6,6 +6,7 @@
 #
 # Commands:
 #   hubot relevant dilbert <search query> - returns an image link
+#   hubot dilbert me <search query> - returns an image link
 #
 # Notes:
 #
