@@ -23,8 +23,8 @@ NO_RESULT_MSG = 'sorry no image found'
 FATAL_MSG = 'sorry cannot screen scrape'
 
 module.exports = (robot) ->
-  robot.respond /(relevant dilbert)|(dilbert me) (.+)/i, (res) ->
-    query = res.match[1]
+  robot.respond /(relevant dilbert|dilbert me) (.+)/i, (res) ->
+    query = res.match[2]
     errorMsg = FATAL_MSG
     image = ""
     request.get URL + query, (error, response, body) ->
