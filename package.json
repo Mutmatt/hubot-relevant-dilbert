@@ -1,7 +1,7 @@
 {
   "name": "hubot-relevant-dilbert",
   "description": "A Hubot script to find the relevant dilbert strip for a phrase",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "jonyeezs",
   "license": "MIT",
   "keywords": "hubot-relevant-dilbert, hubot-dilbert, hubot-scripts",
