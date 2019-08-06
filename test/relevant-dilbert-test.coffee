@@ -27,7 +27,7 @@ describe 'hubot-relevant-dilbert', ->
       @room.user.say('alice', '@hubot relevant dilbert robot power').then =>
         expect(@room.messages).to.eql [
           ['alice', '@hubot relevant dilbert robot power']
-          ['hubot', 'http://myfirstdilbertimage.png']
+          ['hubot', 'https://myfirstdilbertimage.png']
         ]
 
   context 'search has no results', ->
@@ -66,7 +66,7 @@ describe 'hubot-relevant-dilbert', ->
         ]
 
 HtmlWithImages =
-  '<html><div>Some stuff i do not care</div><div class="img-comic-container"><a itemprop="image" class="img-comic-link" href="http://dilbert.com/strip/2005-11-16" title="Click to see the comic strip "><img class="img-responsive img-comic" width="900" height="283" alt=" - Dilbert by Scott Adams" src="http://myfirstdilbertimage" /></a></div><div class="img-comic-container"><a itemprop="image" class="img-comic-link" href="http://dilbert.com/strip/2005-11-16" title="Click to see the comic strip "><img class="img-responsive img-comic" width="900" height="283" alt=" - Dilbert by Scott Adams" src="http://myseconddilbertimage" /></a></div></html>'
+  '<html><div>Some stuff i do not care</div><div class="img-comic-container"><a itemprop="image" class="img-comic-link" href="http://dilbert.com/strip/2005-11-16" title="Click to see the comic strip "><img class="img-responsive img-comic" width="900" height="283" alt=" - Dilbert by Scott Adams" src="//myfirstdilbertimage" /></a></div><div class="img-comic-container"><a itemprop="image" class="img-comic-link" href="http://dilbert.com/strip/2005-11-16" title="Click to see the comic strip "><img class="img-responsive img-comic" width="900" height="283" alt=" - Dilbert by Scott Adams" src="//myseconddilbertimage" /></a></div></html>'
 
 HtmlNoResults =
   '<div class="col-sm-8"><div class="no-results"><h2>No results found here dawg.</h2><p>WhatWHat</p></div></div>'
