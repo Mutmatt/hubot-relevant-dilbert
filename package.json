@@ -13,7 +13,7 @@
     "url": "https://github.com/jonyeezs/hubot-relevant-dilbert/issues"
   },
   "dependencies": {
-    "cheerio": "^0.20.0",
+    "cheerio": "^0.22.0",
     "request": "^2.73.0"
   },
   "peerDependencies": {
